@@ -1,3 +1,9 @@
+# https://github.com/14rsharma/lab11-RS-JL
+# Partner 1: Raghav Sharma
+# Partner 2: Jon-Paul Linter
+
+import math
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
