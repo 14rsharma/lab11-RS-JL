@@ -1,19 +1,18 @@
 # https://github.com/14rsharma/lab11-RS-JL
 # Partner 1: Raghav Sharma
-# Partner 2: Jon-Paul Linter
-
+# Partner 2: Jon-Paul Lunter
 import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-  def test_add(self):
-    self.assertEqual(add(2, 3), 5)
-    self.assertEqual(add(-1, 1), 0)
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
 
-def test_subtract(self):
-    self.assertEqual(subtract(5, 3), 2)
-    self.assertEqual(subtract(3, 5), -2)
+    def test_subtract(self):
+        self.assertEqual(subtract(5, 3), 2)
+        self.assertEqual(subtract(3, 5), -2)
     # ##########################
 
     ######## Partner 1
@@ -29,19 +28,19 @@ def test_subtract(self):
     # ##########################
 
     ######## Partner 2
-   def test_divide_by_zero(self):
-    with self.assertRaises(ZeroDivisionError):
-        div(0, 5)
+    def test_divide_by_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 5)
 
-   def test_logarithm(self):
-    self.assertAlmostEqual(logarithm(2, 8), 3)
-    self.assertAlmostEqual(logarithm(10, 100), 2)
+    def test_logarithm(self):
+        self.assertAlmostEqual(logarithm(2, 8), 3)
+        self.assertAlmostEqual(logarithm(10, 100), 2)
 
-def test_log_invalid_base(self):
-    with self.assertRaises(ValueError):
-        logarithm(1, 8)
-    with self.assertRaises(ValueError):
-        logarithm(-2, 8)
+    def test_log_invalid_base(self):
+        with self.assertRaises(ValueError):
+            logarithm(1, 8)
+        with self.assertRaises(ValueError):
+            logarithm(-2, 8)
     # ##########################
     
     ######## Partner 1
